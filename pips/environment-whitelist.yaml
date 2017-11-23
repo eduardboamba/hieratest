@@ -1,5 +1,5 @@
 ---
-environments:
+pips_utils::environment_whitelist:
 - ro1-cust-alpha-d1
 - ro1-mnm-b2b-d1
 - ro1-mnm-b2b-s1
