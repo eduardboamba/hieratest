@@ -13,3 +13,4 @@ pips_utils::environment_whitelist:
 - sy2-e2e2-b2c-s1
 - sy2-e2e2-b2c-p1
 - inv-d
+- fr-inv-inv-d
