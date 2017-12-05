@@ -1,0 +1,28 @@
+---
+pips_utils::cluster_config::members:
+  app: 1
+  web: 1
+  solr: 1
+  dth: 1
+  cis: 1
+pips_utils::cluster_config::version: 6.3.0
+pips_utils::cluster_config::dth_lb_host: 10.33.8.35
+pips_utils::cluster_config::cis_lb_host: 10.33.8.35
+pips_app::dbconfig::host: inv-d-fr-hdb-001.hybrishosting.com
+pips_app::dbconfig::dbname:
+pips_app::dbconfig::username: invd
+pips_app::dbconfig::password: hgKJ66hgfD65HGF
+pips_dth::dbconfig::dbname:
+pips_dth::dbconfig::username: invhubd
+pips_dth::dbconfig::password: kklhJHddr6g675F
+pips_app::jmxusers:
+  jmXuser8:
+    access: readonly
+    password: jmxPasSW0rd!
+pips_web::domains:
+  inv-d-adm.ms.ycs.io:
+    domain_type: backoffice
+  inv-d-www.ms.ycs.io:
+    domain_type: frontend
+  inv-d-adm.ms.ycs.io:
+    domain_type: admin
