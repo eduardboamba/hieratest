@@ -5,6 +5,4 @@ pips_utils::environment_whitelist:
 - ro1-mnm-b2b-s1
 - sy2-cust-alpha-d2
 - sy2-cust-alpha-d3
-- sy2-cust-alpha-s1
-- sy2-e2e-b2b-d1
 - fr-wfa-wfa-s
