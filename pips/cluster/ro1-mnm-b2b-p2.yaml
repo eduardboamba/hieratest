@@ -1,0 +1,31 @@
+---
+pips_utils::cluster_config::members:
+  app: 2
+  web: 2
+  srch: 2
+  dth: 2
+  cis: 2
+  adm: 1
+pips_utils::cluster_config::version: 6.5.0
+pips_utils::cluster_config::accelerator_suite: b2c
+pips_app::dbconfig::type: hana
+pips_app::dbconfig::host: ro1-mnm-b2b-p1-hdbcvip-001
+pips_app::dbconfig::dbname: HYB
+pips_app::dbconfig::username: hybristest
+pips_app::dbconfig::password: HybrisTest123
+pips_dth::dbconfig::type: hana
+pips_dth::dbconfig::host: ro1-mnm-b2b-p1-hdbcvip-001
+pips_dth::dbconfig::dbname: HYB
+pips_dth::dbconfig::username: datahubtest
+pips_dth::dbconfig::password: DatahubTest123
+pips_utils::cluster_config::dth_lb_host: 10.251.245.65
+pips_utils::cluster_config::cis_lb_host: 10.251.245.65
+pips_app::jmxusers:
+  jmXuser8:
+    access: readonly
+    password: jmxPasSW0rd!
+pips_web::domains:
+  prod.mnm.com:
+    domain_type: frontend
+  admin-prod.mnm.com:
+    domain_type: admin

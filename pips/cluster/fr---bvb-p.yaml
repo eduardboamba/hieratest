@@ -1,0 +1,23 @@
+---
+pips_utils::cluster_config::members:
+  app: 1
+  web: 1
+  solr: 1
+  dth: 1
+pips_utils::cluster_config::version: 6.5.0
+pips_utils::cluster_config::accelerator_suite: b2c
+pips_utils::cluster_config::dth_lb_host: 1.1.1.1
+pips_app::dbconfig::type: hana
+pips_app::dbconfig::host: ro1-cust-yaml00-d1-hdb-001.ycommerce.ycs.io
+pips_app::dbconfig::dbname: HANA
+pips_app::dbconfig::username: dbusr
+pips_app::dbconfig::password: sdfwef34543
+pips_app::jmxusers:
+  jmxUsr:
+    access: readonly
+    password: 23r23ferqwgerg
+pips_web::domains:
+  www.dev.yamltest.com:
+    domain_type: frontend
+  adm.dev.yamltest.com:
+    domain_type: admin
